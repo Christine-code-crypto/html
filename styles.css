@@ -29,4 +29,28 @@
             background-color: transparent;
             text-decoration: underline;
           }
+
+          table,th, td {
+            border: 1px solid black;
+            border-style: dotted;
+            border-spacing: 5px;
+            /*border-radius: 10px; to create round borders*/
+            /*border-collapse: collapse; collapses the bordet into a single border*/
+          }
+
+          td {
+            background-color: #96D4D4;
+            border-color: #96D4D4;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 120px;
+            padding-right: 40px;
+        
+          }
+
+          th{
+            text-align: left;
+          }
+
+          
   
