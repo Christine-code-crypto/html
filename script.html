@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+    <p id="demo"></p>
+
+    <p id="demons">JavaScript can change the style of an HTML element.</p>
+    
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        function myFunction() {
+          document.getElementById("demons").style.fontSize = "25px"; 
+          document.getElementById("demons").style.color = "red";
+          document.getElementById("demons").style.backgroundColor = "yellow";        
+        }
+    </script>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+</body>
+</html>

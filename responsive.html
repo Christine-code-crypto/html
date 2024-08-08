@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg"> <!--srcset: Specifies the default image file to use if none of the previous media queries are matched. This image is used for viewports wider than 1500 pixels.-->
+  <img src="img_flowers.jpg" alt="Flowers" style="width:auto;"><!--This is the fallback image displayed if the browser does not support the <picture> element. It also provides alternative text for accessibility.-->
+</picture>
+
+<h1 style="font-size:10vw;">Responsive Text</h1>
+
+<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+<!--vw -- This unit allows text size (or any other size property) to be responsive to changes in the viewport width.-->
+
+</body>
+</html>

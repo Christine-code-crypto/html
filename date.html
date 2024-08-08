@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hey what is the date today??</p>
+    <button id="dateButton" onclick="tarehe()">Click for date</button>
+    <p id="dateDisplay"></p> <!-- Added this line to display the date -->
+    <p id="udud"></p>
+
+    <button type="button"
+    onclick="document.getElementById('udud').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <script>
+        function tarehe() {
+            document.getElementById("dateDisplay").innerHTML = new Date().toLocaleString(); // Using new Date().toLocaleString() for a more readable format
+            //new Date() is an object
+            //.toLocaleString() is a method
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>
