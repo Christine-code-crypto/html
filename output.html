@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50"> <!--50 is the initial value of the slider-->
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output><!--It is typically used to show dynamic results based on the values of other input elements.-->
+  <br><br>
+  <input type="submit">
+</form>
+
+<!--for: The for attribute specifies which input elements are used in the calculation that produces the output. In this case, for="a b" indicates that the values from the input elements with IDs a and b are used to calculate the result.
+Explicit Linking: The for attribute explicitly links the <output> element to specific input elements, allowing the browser to handle updates automatically.
+Manual Updates: Without the for attribute, you need to manage the updating of the <output> element manually through JavaScript.-->
+
+</body>
+</html>
+
