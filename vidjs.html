@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <button onclick="playPause()">Play/pause</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br>
+
+    <video id="video1" width="420" controls>
+        <source src="butt.mp4">
+        Your browser does not support video content
+    </video>
+
+
+    <p>Video courtesy of <a href="/workouts">Booty workouts</a></p>
+    </div>
+
+    <script>
+        var myVideo = document.getElementById('video1')
+        function playPause(){
+            if(myVideo.paused){
+                myVideo.play()
+            }
+            else{
+                myVideo.play()
+            }
+
+        }
+
+        function makeSmall(){
+            myVideo.width = 320;
+        }
+
+        function makeBig(){
+            myVideo.width = 560;
+        }
+
+        function makeNormal(){
+            myVideo.width = 420;
+        }
+        
+    </script>
+</body>
+</html>
